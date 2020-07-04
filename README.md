@@ -1,3 +1,3 @@
-# lulzpo
+# wemiru
 
 still in development..
