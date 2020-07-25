@@ -1,70 +1,46 @@
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>wemiru</title>
-	<link rel="stylesheet" href="data/css/themes/default/jquery.mobile-1.4.5.min.css">
-	<script src="data/js/jquery.js"></script>
-	<script src="data/js/jquery.mobile-1.4.5.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 150px;
+  color: #404040;
+}
+</style>
 </head>
-
 <body>
-<div data-role="page" id="testpage">
+<body style="background-color:#FBFAF4y;">
+<p id="time"></p>
 
-	<div data-role="header" data-position="fixed">
-		<h1></h1>
-		<a href="#pna" data-position="left" data-position-fixed="true" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-bullets">Menu</a>
+<script>
 
-		<div data-role="navbar">
-		</div>
-	</div>
+var countDownDate = new Date("july 31, 2020 15:37:25").getTime();
 
-	<div role="main" class="ui-content">
 
-			<div class="ui-body ui-body-a ui-corner-all">
-				<h4>Hello world !</h4>
-				<p>Welcome wemiru</p>
-				<p>If u love of any contents on this site,please support the author/artist who's make it.</p>
-	</div>
+var x = setInterval(function() {
 
-		<div data-role="collapsible" data-collapsed="false" data-inset="true">
-		<h3>Upcoming</h3>
-			<ul data-role="listview" >
+  var now = new Date().getTime();
+    
 
-			<li><a data-transition="fade" href="c/0/"><img src="data/c/r/0.jpg">Enter Your Text<p>On-Going</p></a>
-		</div>
-		
-		<div data-role="collapsible" data-collapsed="false" data-inset="true">
-		<h3>List added</h3>
-			<ul data-role="listview" >
+  var distance = countDownDate - now;
+    
 
-			<li><a data-transition="fade" href="c/0/"><img src="data/c/r/0.jpg">Enter Your Text<p>chapter-1 ,Slice of Life</p></a>
-		</div>
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
 
-	</div>
+  document.getElementById("time").innerHTML = days + "days " + hours + "hours "
+  + minutes + "minutes " + seconds + "second ";
+    
 
-			<div data-role="panel" id="pna" data-display="overlay">
-				<div data-role="header" data-position="fixed">
-		<h1></h1>
-		<a href="#pna" data-position="left" data-position-fixed="true" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-arrow-l">Back</a>
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("time").innerHTML = "Please Wait...";
+  }
+}, 1000);
+</script>
 
-		<div data-role="navbar">
-		</div>
-	</div>
-	<br>
-	<br>
-		<a>wemiru</a>
-		<br>
-		<a href="upcoming/" class="ui-btn ui-icon-clock ui-btn-icon-left" data-transition="slidedown">Upcoming List</a></li>
-		<a href="clist/" class="ui-btn ui-icon-bars ui-btn-icon-left" data-transition="slide">Comic List</a></li>
-		<a href="ctags/" class="ui-btn ui-icon-tag ui-btn-icon-left" data-transition="slidedown">Comic Tags</a></li>
-		<br>
-		<br><a href="nlist/" class="ui-btn ui-icon-bars ui-btn-icon-left" data-transition="slide">Novel List</a></li>
-		<a href="ntags/" class="ui-btn ui-icon-tag ui-btn-icon-left" data-transition="slidedown">Novel Tags</a></li>
-		<br>
-		<br><a href="vlist/" class="ui-btn ui-icon-bars ui-btn-icon-left" data-transition="slide">Video List</a></li>
-		<a href="vtags/" class="ui-btn ui-icon-tag ui-btn-icon-left" data-transition="slidedown">Video Tags</a></li>
-		<br>
-		<a href="nfsw/" class="ui-btn ui-icon-delete ui-btn-icon-left" data-transition="slidedown">NSFW mode</a></li>
-		</div>
-	</div>
-</div>
+
