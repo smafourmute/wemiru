@@ -1,3 +1,3 @@
 # wemiru
 
-wemiru is javascript based html libratarian comic reader engine.
+wemiru is a simple javascript based html libratarian algoritm comic reader.
