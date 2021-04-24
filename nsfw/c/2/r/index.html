@@ -1,4 +1,4 @@
-<head>
+<head >
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>wemiru</title>
@@ -8,7 +8,19 @@
 	<link rel="stylesheet" href="../../../data/themes/black.min.css" />
 </head>
 
+<?php
+$cookie_options = array(
+  'expires' => time() + 60*60*24*30,
+  'path' => '/',
+  'domain' => '.domain.com', // leading dot for compatibility or use subdomain
+  'secure' => true, // or false
+  'httponly' => false, // or false
+  'samesite' => 'None' // None || Lax || Strict
+);
 
+setcookie('cors-cookie', 'my-site-cookie', $cookie_options);
+
+?>
 <div data-role="page">
 		<div data-role="header" data-position="fixed">
 			<h1></h1>
@@ -18,8 +30,10 @@
 	<div role="main" class="ui-content">		
 	<div style="text-align:center">
 
-<iframe src="https://docs.google.com/viewer?url=https://archive.org/download/2_20210424_20210424_1611/%5BBatsumatei%5D%20Anzen%20Roshutsu%20Kaiheki%20Safe%20Exhibitionism%20Addiction%20.pdf&embedded=true" frameborder="0" height="800px" width="100%"></iframe>
+<iframe src="https://docs.google.com/viewer?url=archive.org/download/2_20210424_20210424_1611/%5BBatsumatei%5D%20Anzen%20Roshutsu%20Kaiheki%20Safe%20Exhibitionism%20Addiction%20.pdf&embedded=true" frameborder="0" height="650px" width="100%"></iframe>
   </div>
+  loading data it's depend how big and how fastest u internet are..
+  try to reload ,if there's no preview after about 10second..
 		
 
 
