@@ -5,8 +5,7 @@
 	<link rel="stylesheet" href="data/css/themes/default/jquery.mobile-1.4.5.min.css">
 	<script src="data/js/jquery.js"></script>
 	<script src="data/js/jquery.mobile-1.4.5.min.js"></script>
-<script data-ad-client="pub-6966975227812412" async src="https://pagead2.googlesyndication.com/
-pagead/js/adsbygoogle.js"></script>
+
 </head>
 
 <body>
@@ -20,9 +19,9 @@ pagead/js/adsbygoogle.js"></script>
 		</div>
 	</div>
 
-	<div role="main" class="ui-content">
+	<div data-overlay-theme="b" data-theme="b" role="main" class="ui-content">
 
-			<div class="ui-body ui-body-a ui-corner-all">
+			<div  data-overlay-theme="b" data-theme="b" class="ui-body ui-body-a ui-corner-all">
 				<h4>Hello World !</h4>
 				<p>welcome..</p>
 				<img src="" style = "width:auto">
@@ -57,8 +56,15 @@ pagead/js/adsbygoogle.js"></script>
 		<a href="vlist/" class="ui-btn ui-icon-bars ui-btn-icon-left" data-transition="slide">Video List</a></li>
 		<a href="vtags/" class="ui-btn ui-icon-tag ui-btn-icon-left" data-transition="slidedown">Video Tags</a></li>
 		<br>
-		<a  href="#" class="ui-btn ui-icon-heart-b ui-btn-icon-left">NSFW mode</a></li>
-		<p>*sorry,NSFW mode will available ASAP..</p>
+		<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-icon-left ui-btn-b">Wemiru NSFW</a>
+<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+    <div role="main" class="ui-content">
+        <h3 class="ui-title">Wemiru-NFSW?</h3>
+    <p>Wemiru-NSFW may contains explicit contents ( ͡° ͜ʖ ͡°)</p>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Back</a>
+        <a href="nsfw/" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-transition="flow">Countinue</a>
+    </div>
+</div>
 		
 		
 
