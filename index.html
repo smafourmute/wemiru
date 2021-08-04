@@ -2,34 +2,81 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>wemiru</title>
-	<link rel="stylesheet" href="../data/css/themes/default/jquery.mobile-1.4.5.min.css">
-	<script src="../data/js/jquery.js"></script>
-	<script src="../data/js/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="data/css/themes/default/jquery.mobile-1.4.5.min.css">
+	<script src="data/js/jquery.js"></script>
+	<script src="data/js/jquery.mobile-1.4.5.min.js"></script>
+
 </head>
 
+<body>
+<div data-role="page" id="testpage">
+
+	<div data-role="header" data-position="fixed">
+		<h1></h1>
+		<a href="#pna" data-position="left" data-position-fixed="true" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-bullets">Menu</a>
+
+		<div data-role="navbar">
+		</div>
+	</div>
+
+	<div data-overlay-theme="b" data-theme="b" role="main" class="ui-content">
+
+			<div  data-overlay-theme="b" data-theme="b" class="ui-body ui-body-a ui-corner-all">
+				<h4>Halo Selamat datang di Wemiru</h4>
+				<p><img src="data/banner.png" style="max-width:100%;"></img></p>
+				<p>Apa itu wemiru? ,wemiru adalah situs/aplikasi prototype berbasis web ,yang digunakan untuk atau sebagai perpustakaan digital.</p>
+				<p>Wemiru tidak memiliki batasan peminjaman kontennya,selama pengunjung memiliki akses internet untuk mengakses wemiru</p>
+				<p>Wemiru bersifat terbuka atau opensource,Siswa dapat berpatipasi dalam pengambangannya ,yang mana hal ini dapat menjadi ilmu pengetahuan tambahan bagi siswa,dibandingkan dengan e-library lainnya yang bersifat tertutup close-source.</p>
+				<img src="" style = "width:auto">
 
 
-<div data-role="page" data-dom-cache="true">
-		<div data-role="header" data-position="fixed">
-			<h1></h1>
-			<a data-rel="back" data-position="left" data-position-fixed="true" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-arrow-l">Kembali</a>
+
+				<br>
+
+
+	</div>
+
+
+
+
+
+			<div data-role="panel" id="pna" data-display="overlay">
+				<div data-role="header" data-position="fixed">
+		<h1></h1>
+		<a href="#pna" data-position="left" data-position-fixed="true" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-arrow-l">Kembali</a>
+
+		<div data-role="navbar">
+		</div>
+	</div>
+	<br>
+	<br>
+		<a><img src="wemiru.jpeg" style = "width:8%"> wemiru</a>
+		<br>
+
+		<a href="clist/" class="ui-btn ui-icon-bars ui-btn-icon-left" data-transition="slide">Daftar Buku</a></li>
+		<a href="ctags/" class="ui-btn ui-icon-tag ui-btn-icon-left" data-transition="slidedown">Kategori Buku</a></li>
+		<br>
+		
+		<br>
+
+
+
+
 		</div>
 
 
 
 
+		<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
 
-	<div role="main" class="ui-content">
-	<h3>Pilih buku berdasarkan kategori : </h3>
-
-		<ul data-role="listview" data-collapsed="false" data-filter="true" data-filter-placeholder="Cari.." data-inset="true" data-position="fixed">
-
-				<li><a data-transition="slide" href="AgamaIslam/">Agama Islam<p>1 Buku</p></a></li>
-				<li><a data-transition="slide" href="komik/">arsip Komik<p>Komik</p></a></li>
-</ul>
-	</div>
-</ul>
+			<li><a href="#" data-transition="slideup" data-icon="grid" class="ui-btn-active ui-state-persist">Hello</a></li>
+			<li><a href="clist/" data-transition="slideup" data-icon="grid">Buku</a></li>
+			
+		</ul>
 	</div>
 </div>
-</body>
+
+	</div>
 </div>
