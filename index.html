@@ -23,7 +23,7 @@
 
 			<div  data-overlay-theme="b" data-theme="b" class="ui-body ui-body-a ui-corner-all">
 				<h4>Halo Selamat datang di Wemiru</h4>
-				<p><img src="data/banner.png" style="max-width:100%;"></img></p>
+				<p><img src="banner.jpg" style="max-width:100%;"></img></p>
 				<p>Apa itu wemiru? ,wemiru adalah situs/aplikasi prototype berbasis web ,yang digunakan untuk atau sebagai perpustakaan digital.</p>
 				<p>Wemiru tidak memiliki batasan peminjaman kontennya,selama pengunjung memiliki akses internet untuk mengakses wemiru</p>
 				<p>Wemiru bersifat terbuka atau opensource,Siswa dapat berpatipasi dalam pengambangannya ,yang mana hal ini dapat menjadi ilmu pengetahuan tambahan bagi siswa,dibandingkan dengan e-library lainnya yang bersifat tertutup close-source.</p>
@@ -45,19 +45,24 @@
 		<h1></h1>
 		<a href="#pna" data-position="left" data-position-fixed="true" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-arrow-l">Kembali</a>
 
-		<div data-role="navbar">
-		</div>
+
 	</div>
 	<br>
 	<br>
 		<a><img src="wemiru.jpeg" style = "width:8%"> wemiru</a>
 		<br>
+		<br>
 
 		<a href="clist/" class="ui-btn ui-icon-bars ui-btn-icon-left" data-transition="slide">Daftar Buku</a></li>
 		<a href="ctags/" class="ui-btn ui-icon-tag ui-btn-icon-left" data-transition="slidedown">Kategori Buku</a></li>
 		<br>
-		
 		<br>
+<a href="#transitionExample" data-transition="flip" class="ui-btn ui-icon-video ui-btn-icon-left" data-rel="popup">Video</a>
+<a href="#transitionExample" data-transition="flip" class="ui-btn ui-icon-audio ui-btn-icon-left" data-rel="popup">Musik</a>
+<div data-role="popup" id="transitionExample" class="ui-content" data-theme="a">
+<p>Masih dalam pengembangan.</p>
+</div>
+
 
 
 
@@ -71,8 +76,13 @@
 	<div data-role="navbar">
 		<ul>
 
-			<li><a href="#" data-transition="slideup" data-icon="grid" class="ui-btn-active ui-state-persist">Hello</a></li>
+			<li><a href="#" data-transition="slideup" data-icon="Home" class="ui-btn-active ui-state-persist">Hello</a></li>
 			<li><a href="clist/" data-transition="slideup" data-icon="grid">Buku</a></li>
+			<li><a href="#transitionExample" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-icon="video">Video</a></li>
+			<li><a href="#transitionExample" data-transition="flip" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-icon="audio">Musik</a></li>
+</div>
+		<div data-role="popup" id="transitionExample" class="ui-content" data-theme="a">
+<p>Masih dalam pengembangan.</p>	
 			
 		</ul>
 	</div>
