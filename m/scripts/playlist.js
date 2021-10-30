@@ -1,5 +1,17 @@
 trackList = [
   {
+    name:"ワンダラー (Wanderer)",
+    artist:"YOASOBI(ワンダラー)",
+	album:"ワンダラー (Wanderer)-single",
+    src:"music/ワンダラー _ 初音ミク.mp3"
+  },
+  {
+    name:"Green Dome Battle(8bit) version",
+    artist:"M. J. Hood Music",
+	album:"Cyberpunk RPG ost cover",
+    src:"music/music.mp3"
+  },
+  {
     name:"Ten Thousand Stars feat. 初音ミク",
     artist:"CircusP",
 	album:"HATSUNE MIKU EXPO 2016 E.P.",
